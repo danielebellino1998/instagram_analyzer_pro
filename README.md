@@ -1,4 +1,4 @@
-# Instagram Analyzer PRO v2.1
+# Instagram Analyzer PRO v3.0
 
 Analizzatore locale delle esportazioni Instagram per confrontare follower, following e relazioni reciproche.
 
@@ -52,17 +52,16 @@ Nessun dato Instagram viene inviato a server esterni.
 
 ## 📌 Versione
 
-**v2.1 - Aggiornamento Privacy e Esperienza Utente**
+**v3.0 - Aggiornamento Privacy e Esperienza Utente**
 
 Principali aggiornamenti:
-- Cache persistente
-- Ripristino sessione
-- Supporto esportazioni Instagram con più file
-- Migliorata esperienza utente
-- Aggiunta guida esportazione dati Instagram
-- Analisi locale senza salvataggio dati
-- Migliorata privacy e sicurezza
-- Migliorata esperienza utente
+- Algoritmo: regex ancorate, confronto senza distinzione maiuscole/minuscole, lettura sia dei file con title sia con value, e followDates che si azzera a ogni analisi.
+- Errori chiari: try/catch con messaggi in pagina per ZIP sbagliato, JSON rotto, export in HTML invece che JSON, file mancanti o ZIP troppo grande.
+- Sicurezza: gli username vengono inseriti nella pagina senza innerHTML né onclick. Prima un ZIP manipolato poteva iniettare codice.
+- Prestazioni: la ricerca ha un ritardo di 200 ms e non riscrive più la cache a ogni lettera. Il segno “visitato” si applica senza ridisegnare la lista, quindi lo scroll non salta.
+- Interfaccia: statistiche con stile e griglia adattiva, contatore dei risultati, tab attiva evidenziata, pulsante per le richieste ricevute di recente, Pulisci tutto che cancella anche la cronologia dei visitati.
+- Privacy: il testo ora dice che i dati restano nel browser finché non premi “Pulisci tutto”, e all’apertura compare la data dell’ultima analisi.
+- PWA: manifest completo con icone, e sw.js che fa funzionare l’app offline (serve https, per esempio GitHub Pages).
 
 ---
 
