@@ -61,7 +61,7 @@ Principali aggiornamenti:
 - Prestazioni: la ricerca ha un ritardo di 200 ms e non riscrive più la cache a ogni lettera. Il segno “visitato” si applica senza ridisegnare la lista, quindi lo scroll non salta.
 - Interfaccia: statistiche con stile e griglia adattiva, contatore dei risultati, tab attiva evidenziata, pulsante per le richieste ricevute di recente, Pulisci tutto che cancella anche la cronologia dei visitati.
 - Privacy: il testo ora dice che i dati restano nel browser finché non premi “Pulisci tutto”, e all’apertura compare la data dell’ultima analisi.
-- PWA: manifest completo con icone, e sw.js che fa funzionare l’app offline (serve https, per esempio GitHub Pages).
+- PWA: manifest completo con icone, e sw.js che fa funzionare l’app offline.
 
 ---
 
